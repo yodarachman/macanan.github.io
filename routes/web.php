@@ -17,6 +17,9 @@ Route::get('/umkm','\App\Http\Controllers\HomeController@umkm');
 Route::get('/galeri','\App\Http\Controllers\HomeController@galeri');
 Route::get('/datadesa','\App\Http\Controllers\HomeController@data');
 Route::get('/berita','\App\Http\Controllers\HomeController@news');
+Route::get('/deskripsi/{id}', [App\Http\Controllers\HomeController::class, 'show'])->name('news.show');
+
+
 Route::get('/sotk','\App\Http\Controllers\HomeController@perangkat');
 
 //login admin
@@ -72,6 +75,7 @@ Route::get('/kk', function(){
 Route::get('/aktekelahiran', function(){
     return view('home.aktekelahiran');
 });
+
 Route::get('/aktekematian', function(){
     return view('home.informasi');
 });
@@ -84,6 +88,7 @@ Route::get('/izinkeramaian', function(){
 Route::get('/ktp', function(){
     return view('home.ktp');
 });
+
 // Route::get('/datadesa', function(){
 //     return view('home.datadesa');
 // });

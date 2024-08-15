@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-  color: #65c9cd;
+  color: #1F1D59;
   text-decoration: none;
 }
 
@@ -200,7 +200,7 @@ h6 {
 }
 
 .appointment-btn:hover {
-  background: #65c9cd;
+  background: #1F1D59;
   color: #fff;
 }
 
@@ -572,7 +572,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #65c9cd;
+  background: #1F1D59;
 }
 
 @media (max-width: 992px) {
@@ -1015,7 +1015,7 @@ section {
 .appointment .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #1C418C;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1035,7 +1035,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #1C418C;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1468,7 +1468,7 @@ section {
 }
 
 .pricing .btn-buy:hover {
-  background: #65c9cd;
+  background: #1F1D59;
 }
 
 .pricing .featured h3 {
@@ -1607,7 +1607,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #1C418C;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1627,7 +1627,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #1C418C;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -1663,7 +1663,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #65c9cd;
+  background: #1F1D59;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1736,7 +1736,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #65c9cd;
+  background: #1F1D59;
   text-decoration: none;
 }
 
@@ -1816,7 +1816,7 @@ section {
 }
 
 #footer .footer-top .footer-newsletter form input[type=submit]:hover {
-  background: #65c9cd;
+  background: #1F1D59;
 }
 
 #footer .copyright {

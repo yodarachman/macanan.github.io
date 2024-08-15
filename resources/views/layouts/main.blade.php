@@ -52,11 +52,11 @@
           <li class="dropdown"><a href="/profil"><span>Profil</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a class="nav-link" href="/sejarah">Sejarah Desa</a></li>
-              <li><a class="nav-link" href="/visimisi">Visi dan Misi</a></li>
-              <li><a class="nav-link" href="/sotk">Struktur Organisasi dan Tata Kerja</a></li>
-              <li><a class="nav-link" href="/kelembagaan">Kelembagaan</a></li>
-              <li><a class="nav-link" href="/potensi">Potensi Desa</a></li>
-              <li><a class="nav-link" href="/asetdesa">Aset Desa</a></li>
+              
+              <li><a class="nav-link" href="/sotk">Organisasi Desa</a></li>
+              
+              
+              
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="/datadesa">Data Desa</a></li>
@@ -68,13 +68,13 @@
               <li><a href="/aktekematian">Pembuatan Akte Kematian</a></li>
               <li><a href="/pindahdomisili">Prosedur Pindah Domisili</a></li>
               <li><a href="/izinkeramaian">Pembuatan Surat Izin Keramaian</a></li>
-              <li><a href="http://bphtb.probolinggokab.go.id/" target="_blank">Cek PBB</a></li>
+              
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="/event">EVENT</a></li>
           <li><a class="nav-link scrollto" href="/berita">BERITA</a></li>
           <li><a class="nav-link scrollto" href="/galeri">GALERI</a></li>
-          <li><a class="nav-link scrollto" href="/umkm">POJOK UMKM</a></li>
+          <li><a class="nav-link scrollto" href="/umkm">UMKM SEKITAR</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -91,7 +91,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Macanan</h3>
+              <h3>Desa Macanan</h3>
               <p>
                 Kec. Kebakkramat <br>
                 Kab. karanganyar<br><br>
@@ -111,9 +111,9 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="/">B</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/profil">Profil</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="/informasi">Informasi Layanan</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="/">Beranda</a></li>
+              
+              
               <li><i class="bx bx-chevron-right"></i> <a href="/berita">Berita</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="/galeri">Galeri</a></li>
             </ul>
@@ -137,7 +137,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Human</span></strong>.
+        &copy; <strong><span>Tim2 KKN Undip Desa Macanan 2024</span></strong>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -161,6 +161,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
 
 </body>
 

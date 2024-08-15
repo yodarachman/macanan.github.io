@@ -81,5 +81,9 @@ class HomeController extends Controller
             'perangkat',
         ));
     }
-
+    public function show($id)
+    {
+        $news = News::findOrFail($id);
+        return view('home.description', compact('news'));
+    }
 }
