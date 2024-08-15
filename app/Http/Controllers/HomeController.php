@@ -64,7 +64,7 @@ class HomeController extends Controller
         ));
     }
     public function news() {
-        $news = News::orderBy('created_at', 'desc')->paginate(5); // Menampilkan 10 berita per halaman
+        $news = News::orderBy('created_at', 'desc')->paginate(9); // Menampilkan 10 berita per halaman
         return view('home.news', compact('news'));
     }
     
