@@ -171,7 +171,7 @@
         <div class="section-title">
           <h2>Galeri Desa Macanan</h2>
         </div>
-
+ 
         <div class="gallery-slider swiper">
        
           <div class="swiper-wrapper align-items-center">

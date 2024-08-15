@@ -67,7 +67,7 @@ class HomeController extends Controller
         $news = News::orderBy('created_at', 'desc')->paginate(9); // Menampilkan 10 berita per halaman
         return view('home.news', compact('news'));
     }
-    
+     
     public function data(){
         $data = Data::all();
         return view('home.data',compact(
