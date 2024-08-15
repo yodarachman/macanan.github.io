@@ -63,12 +63,11 @@ class HomeController extends Controller
             'galeri',
         ));
     }
-    public function news(){
-        $news = News::all();
-        return view('home.news',compact(
-            'news',
-        ));
+    public function news() {
+        $news = News::orderBy('created_at', 'desc')->paginate(5); // Menampilkan 10 berita per halaman
+        return view('home.news', compact('news'));
     }
+    
     public function data(){
         $data = Data::all();
         return view('home.data',compact(

@@ -37,39 +37,41 @@
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container" data-aos="fade-up">
+<!-- ======= Featured Services Section ======= -->
+<section id="featured-services" class="featured-services">
+  <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Berita Desa Macanan</h2>
-        </div>
+    <div class="section-title">
+      <h2>Berita Desa Macanan</h2>
+    </div>
 
-        <div class="row">
-        @foreach ($news as $news)
-          <div class="col-md-3 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+    <div class="row">
+      @foreach ($news->sortByDesc('created_at')->take(6) as $item)
+        <div class="col-md-3 col-lg-4 d-flex align-items-stretch mb-5 mb-lg-0">
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="/image/{{$news->image}}" alt="" class="img-fluid" >
-              </div>
-              <br>
-              <div align="left">
-              <h4>{{$news->title}}</h4>
-              <small>{{ $news->created_at->format('d M Y') }}</small>
+              <img src="/image/{{ $item->image }}" alt="" class="img-fluid">
+            </div>
+            <br>
+            <div align="left">
+              <h4>{{ $item->title }}</h4>
+              <small>{{ $item->created_at->format('d M Y') }}</small>
             </div>
             <p class="description">
-              {!! Str::limit(strip_tags($news->description), 150, '...') !!}
-          </p>
-          <div class="text-center">
-            <a class="cta-btn scrollto" href="/aset/{{$news->id}}">Lihat detail</a> <!-- Link ke halaman detail -->
-        </div>
+              {!! Str::limit(strip_tags($item->description), 150, '...') !!}
+            </p>
+            <div class="text-center">
+              <a class="cta-btn scrollto" href="/aset/{{ $item->id }}">Lihat detail</a>
             </div>
           </div>
-          @endforeach
         </div>
+      @endforeach
+    </div>
 
-      </div>
-    </section><!-- End Featured Services Section -->
+  </div>
+</section><!-- End Featured Services Section -->
+
+
 
     
 
