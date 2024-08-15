@@ -24,7 +24,7 @@
               <img src="/image/{{$news->image}}" alt="" class="img-fluid" >
               </div>
               <br>
-              <div class="text-center">
+              <div align="left">
               <h4>{{$news->title}}</h4>
               <small>{{ $news->created_at->format('d M Y') }}</small>
             </div>

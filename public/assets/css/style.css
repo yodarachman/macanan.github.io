@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #0077B6;
+  color: #042a3e;
   text-decoration: none;
 }
 
@@ -554,7 +554,7 @@ h6 {
 
 #hero .carousel-indicators li.active {
   opacity: 1;
-  background: #0077B6;
+  background: #041d2b;
 }
 
 #hero .btn-get-started {
@@ -807,7 +807,7 @@ section {
 
 .cta .cta-btn:hover {
   background: #fff;
-  color: #0077B6;
+  color: #0f3e58;
 }
 
 /*--------------------------------------------------------------

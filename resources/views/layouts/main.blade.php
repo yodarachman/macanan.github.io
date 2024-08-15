@@ -99,15 +99,14 @@
               <p>
                 Kec. Kebakkramat <br>
                 Kab. karanganyar<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Phone:</strong> -<br>
+                <strong>Email:</strong> bdmacanan.kra@gmail.com<br>
+                <strong>Email:</strong> pemerintah.desamacanan@gmail.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                
+                <a href="https://www.instagram.com/desamacanan/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                
               </div>
             </div>
           </div>
@@ -141,7 +140,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; <strong><span>Tim2 KKN Undip Desa Macanan 2024</span></strong>
+        &copy; <strong><span>Tim II KKN Undip Desa Macanan 2024</span></strong>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Desa Macanan | Akte Kelahiran')
+@section('title', 'Desa Macanan | Galeri Desa')
 
 @section('container')
   <!-- ======= Hero Section ======= -->

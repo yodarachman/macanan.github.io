@@ -53,13 +53,16 @@
               <img src="/image/{{$news->image}}" alt="" class="img-fluid" >
               </div>
               <br>
-              <div class="text-center">
+              <div align="left">
               <h4>{{$news->title}}</h4>
               <small>{{ $news->created_at->format('d M Y') }}</small>
             </div>
             <p class="description">
               {!! Str::limit(strip_tags($news->description), 150, '...') !!}
           </p>
+          <div class="text-center">
+            <a class="cta-btn scrollto" href="/aset/{{$news->id}}">Lihat detail</a> <!-- Link ke halaman detail -->
+        </div>
             </div>
           </div>
           @endforeach
@@ -77,7 +80,9 @@
 
         <div class="text-center">
           <h3>Sejarah Desa Macanan</h3>
-          <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+          <p> Desa Macanan adalah sebuah desa yang terletak di Kecamatan Kebakkramat, Kabupaten Karanganyar, Jawa Tengah
+            Asal-mualsan nama Desa Macanan , Dahulu ada cerita seekor Gajah dan Macan, macan yang satu ini adalah macan yang datang dari Gunung Lawu, Gunung Lawu adalah gunung yang terletak disebelah timur Kabupaten Karanganyar dan masih menjadi kawasan Kabupaten Karanganyar
+          </p>
           <a class="cta-btn scrollto" href="/sejarah">Lihat detail</a>
         </div>
 
