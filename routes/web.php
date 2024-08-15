@@ -17,7 +17,7 @@ Route::get('/umkm','\App\Http\Controllers\HomeController@umkm');
 Route::get('/galeri','\App\Http\Controllers\HomeController@galeri');
 Route::get('/datadesa','\App\Http\Controllers\HomeController@data');
 Route::get('/berita','\App\Http\Controllers\HomeController@news');
-Route::get('/deskripsi/{id}', [App\Http\Controllers\HomeController::class, 'show'])->name('news.show');
+Route::get('/aset/{id}', [App\Http\Controllers\HomeController::class, 'show'])->name('news.show');
 
 
 Route::get('/sotk','\App\Http\Controllers\HomeController@perangkat');

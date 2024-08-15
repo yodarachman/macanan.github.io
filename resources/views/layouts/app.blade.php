@@ -15,6 +15,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="/lte/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="/lte/dist/css/adminlte.min.css">
+  <!-- trix editor -->
+  <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
+  <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
+
+  <head>
+    <!-- Other head content -->
+
+    <!-- Trix Editor CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/trix/2.0.0/trix.min.css">
+</head>
+
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -231,5 +244,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="/lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/lte/dist/js/adminlte.min.js"></script>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<!-- Trix Editor JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trix/2.0.0/trix.min.js"></script>
 </body>
 </html>

@@ -29,6 +29,10 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- trix-editor -->
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.8/dist/trix.css">
+  <script type="text/javascript" src="https://unpkg.com/trix@2.0.8/dist/trix.umd.min.js"></script>
+
   <!-- =======================================================
   * Template Name: Medicio - v4.9.1
   * Template URL: https://bootstrapmade.com/medicio-free-bootstrap-theme/

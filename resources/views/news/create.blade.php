@@ -3,7 +3,6 @@
 @section('title', 'Tambah Data Berita Desa Macanan')
 
 @section('content')
-
 <div class="container">
     <a href="/admin/news" class="btn btn-primary mb-3">Kembali</a>
     <div class="row">
@@ -12,7 +11,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="title">Judul</label>
-                    <input type="text" class="form-control" name="title" placeholder="Judul">
+                    <input type="text" class="form-control" name="title" placeholder="Judul" value="{{ old('title') }}">
                 </div>
                 @error('title')
                 <small style="color:red">{{$message}}</small>
@@ -20,7 +19,9 @@
 
                 <div class="form-group">
                     <label for="description">Deskripsi</label>
-                    <textarea name="description" id="description" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
+                    <!-- Trix Editor -->
+                    <input id="description" type="hidden" name="description">
+                    <trix-editor input="description" placeholder="Tulis deskripsi berita di sini..."></trix-editor>
                 </div>
                 @error('description')
                 <small style="color:red">{{$message}}</small>
@@ -41,12 +42,9 @@
         </div>
     </div>
 </div>
-
 @endsection
 
 @section('scripts')
-<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
-<script>
-    CKEDITOR.replace('description');
-</script>
+    <!-- Trix Editor JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/2.0.0/trix.min.js"></script>
 @endsection

@@ -33,7 +33,7 @@
                 <tr>
                     <td>{{ $i++ }}</td>
                     <td>{{$news->title}}</td>
-                    <td>{{$news->description}}</td>
+                    <td> {!! $news->description !!}</td>
                     <td>
                         <img src="/image/{{$news->image}}" alt="" class="img-fluid" width="90">
                     </td>

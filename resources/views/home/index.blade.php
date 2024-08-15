@@ -55,8 +55,11 @@
               <br>
               <div class="text-center">
               <h4>{{$news->title}}</h4>
+              <small>{{ $news->created_at->format('d M Y') }}</small>
             </div>
-              <p class="description">{{$news->description}}</p>
+            <p class="description">
+              {!! Str::limit(strip_tags($news->description), 150, '...') !!}
+          </p>
             </div>
           </div>
           @endforeach

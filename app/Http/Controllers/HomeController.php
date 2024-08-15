@@ -84,6 +84,6 @@ class HomeController extends Controller
     public function show($id)
     {
         $news = News::findOrFail($id);
-        return view('home.description', compact('news'));
+        return view('profil.aset', compact('news'));
     }
 }
