@@ -20,7 +20,9 @@
                 @enderror
                  <div class="form-group">
                     <label for="">Deskripsi</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi">{{$sambutan->description}}</textarea>
+                    <!-- Trix Editor -->
+                    <input id="description" type="hidden" name="description" value="{{ old('description', $sambutan->description) }}">
+                    <trix-editor input="description" placeholder="Tulis deskripsi berita di sini..."></trix-editor>
                 </div>
                  @error('description')
                 <small style="color:red">{{$message}}</small>

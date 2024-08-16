@@ -96,7 +96,7 @@
       <div class="container" data-aos="fade-up">
       @foreach ($sambutan as $sambutan)
         <div class="section-title">
-          <h2>Sambutan Kepala Desa</h2>
+          <h2>{{$sambutan->title}}</h2>
         </div>
 
         <div class="row">
@@ -104,7 +104,7 @@
             <img src="/image/{{$sambutan->image}}" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>{{$sambutan->title}}</h3>
+            <h3></h3>
             <br>
             <p>
              {{$sambutan->description}}

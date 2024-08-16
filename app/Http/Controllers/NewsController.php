@@ -13,11 +13,13 @@ class NewsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
-        $news = News::all();
+{
+    // Mengurutkan berdasarkan tanggal pembuatan dari yang terbaru dan paginasi 10 data per halaman
+    $news = News::orderBy('created_at', 'desc')->paginate(10);
 
-        return view('news.index', compact('news'));
-    }
+    return view('news.index', compact('news'));
+}
+
 
     /**
      * Show the form for creating a new resource.

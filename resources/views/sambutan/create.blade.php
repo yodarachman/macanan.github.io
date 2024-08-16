@@ -17,9 +17,11 @@
                 @error('title')
                 <small style="color:red">{{$message}}</small>
                 @enderror
-                 <div class="form-group">
-                    <label for="">Deskripsi</label>
-                    <textarea name="description" id="" cols="30" rows="10" class="form-control" placeholder="Deskripsi"></textarea>
+                <div class="form-group">
+                    <label for="description">Deskripsi</label>
+                    <!-- Trix Editor -->
+                    <input id="description" type="hidden" name="description">
+                    <trix-editor input="description" placeholder="Tulis deskripsi berita di sini..."></trix-editor>
                 </div>
                  @error('description')
                 <small style="color:red">{{$message}}</small>
@@ -39,4 +41,9 @@
     </div>
 </div>
 
+@endsection
+
+@section('scripts')
+    <!-- Trix Editor JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trix/2.0.0/trix.min.js"></script>
 @endsection

@@ -26,31 +26,40 @@
                 </tr>
             </thead>
             <tbody>
-                @php
-                    $i = 1
-                @endphp
-                @foreach ($news as $news)
+                @foreach ($news as $index => $newsItem)
                 <tr>
-                    <td>{{ $i++ }}</td>
-                    <td>{{$news->title}}</td>
-                    <td> {!! $news->description !!}</td>
+                    <td>{{ $news->firstItem() + $index }}</td>
+                    <td>{{$newsItem->title}}</td>
+                    <td>{!! $newsItem->description !!}</td>
                     <td>
-                        <img src="/image/{{$news->image}}" alt="" class="img-fluid" width="90">
+                        <img src="/image/{{$newsItem->image}}" alt="" class="img-fluid" width="90">
                     </td>
                     <td>
-                        <a href="{{ route('news.edit', $news->id) }}" class="btn btn-warning">Edit</a>
+                        <a href="{{ route('news.edit', $newsItem->id) }}" class="btn btn-warning">Edit</a>
                         <br>
 
-                        <form action="{{route('news.destroy', $news->id)}}" method="POST">
+                        <form action="{{route('news.destroy', $newsItem->id)}}" method="POST">
                             @csrf
                             @method('DELETE')
-                           <br> <button type="submit" class="btn btn-danger">Hapus</button>
+                           <br><button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
                     </td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+    </div>
+
+    <style>
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+
+    <div class="custom-pagination">
+        {{ $news->links('pagination::simple-bootstrap-4') }}
     </div>
 </div>
 
