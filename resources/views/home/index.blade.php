@@ -107,7 +107,7 @@
             <h3></h3>
             <br>
             <p>
-             {{$sambutan->description}}
+              {!! $sambutan->description !!}
             </p>
           </div>
         </div>
